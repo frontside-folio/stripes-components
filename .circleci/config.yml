@@ -150,6 +150,25 @@ jobs:
       - store_artifacts:
           path: ./artifacts
 
+  test-ie:
+    docker:
+      - image: circleci/node:10
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run:
+          name: Run tests
+          command:
+            yarn test
+            --karma.singleRun
+            --karma.browsers=bs_ie11_windows
+            --karma.reporters mocha junit BrowserStack
+            --karma.junitReporter.outputDir artifacts/junit/karma
+      - store_test_results:
+          path: ./artifacts/junit
+      - store_artifacts:
+          path: ./artifacts
+
 workflows:
   version: 2
   push:
