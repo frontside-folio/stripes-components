@@ -195,3 +195,6 @@ workflows:
       - test-edge:
           requires:
             - checkout-and-install
+      - test-ie:
+          requires:
+            - checkout-and-install
