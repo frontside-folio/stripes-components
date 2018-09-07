@@ -34,6 +34,12 @@ export function mountWithContext(component) {
   });
 }
 
+export function mountWithLocale(component, locale) {
+  return new Promise(resolve => {
+    ReactDOM.render(<Harness locale={locale}>{component}</Harness>, getCleanTestingRoot(), resolve);
+  });
+}
+
 export function selectorFromClassnameString(str) {
   return str.replace(/\s/, '.');
 }

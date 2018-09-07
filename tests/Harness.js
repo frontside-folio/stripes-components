@@ -26,9 +26,15 @@ function prefixKeys(obj) {
 
 class Harness extends React.Component {
   render() {
+    const { locale } = this.props;
+
     return (
       <Provider store={store}>
-        <IntlProvider locale="en" key="en" messages={prefixKeys(translations)}>
+        <IntlProvider
+          locale={locale || 'en'}
+          key={locale || 'en'}
+          messages={prefixKeys(translations)}
+        >
           {this.props.children}
         </IntlProvider>
       </Provider>
@@ -38,6 +44,7 @@ class Harness extends React.Component {
 
 Harness.propTypes = {
   children: PropTypes.node,
+  locale: PropTypes.string
 };
 
 export default Harness;
