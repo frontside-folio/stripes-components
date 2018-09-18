@@ -62,8 +62,8 @@ is fixed.
 ## How Do I Write Tests?
 
 Tests in stripes components are written using
-[Mocha](https://mochajs.org/) via
-[`@bigtest/mocha`](https://github.com/bigtestjs/mocha). At the core of
+[Mocha](https://mochajs.org/) with
+[`@bigtest/interactor`](https://github.com/bigtestjs/interactor). At the core of
 this package is the concept of _convergences_ which make testing
 asynchronous applications both robust and fast. They accomplish this
 by freeing us from the burden of worrying about when a component, or
@@ -97,7 +97,6 @@ Here's a sample of tests from the `Button` component:
 import React from 'react';
 
 // testing tools
-import { describe, beforeEach, it } from '@bigtest/mocha';
 import { expect } from 'chai';
 
 // test helpers
@@ -167,7 +166,7 @@ previous components on _the next_ call, this allows us to investigate
 and debug our tests after they run. You can then use Mocha's `it.only`
 to isolate a specific test to debug.
 
-Since `@bigtest/mocha` makes our tests convergent, and could possibly
+Since `@bigtest/interactor` makes our tests convergent, and could possibly
 run them multiple times, _they must only contain assertions_. You'll
 also notice when we perform our `clicked` test that the `await
 button.clickButton()` action is separated into it's own `beforeEach`

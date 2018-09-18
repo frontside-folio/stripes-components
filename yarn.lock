@@ -250,12 +250,6 @@
   dependencies:
     "@bigtest/convergence" "^0.10.0"
 
-"@bigtest/mocha@^0.5.0":
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/@bigtest/mocha/-/mocha-0.5.1.tgz#b0762b0f356bb307c640e6bd52a57e0f381409f6"
-  dependencies:
-    "@bigtest/convergence" "^0.10.0"
-
 "@folio/eslint-config-stripes@^3.2.0":
   version "3.2.0"
   resolved "https://repository.folio.org/repository/npm-folio/@folio/eslint-config-stripes/-/eslint-config-stripes-3.2.0.tgz#d37c098dc8a6853b482c848e4ee3f260c656cf30"
