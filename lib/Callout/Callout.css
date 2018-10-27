@@ -27,20 +27,12 @@
     background-color: color(var(--error, #900) tint(25%));
     border-color: var(--error);
     color: #fff;
-
-    & :global .stripes__icon {
-      fill: #fff;
-    }
   }
 
   &.success {
     background-color: color(var(--success, #060) tint(25%));
     border-color: var(--success);
     color: #fff;
-
-    & :global .stripes__icon {
-      fill: #fff;
-    }
   }
 }
 

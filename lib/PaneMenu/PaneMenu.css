@@ -5,4 +5,5 @@
   align-items: center;
   position: relative;
   z-index: 2;
+  font-size: var(--font-size-x-large);
 }
