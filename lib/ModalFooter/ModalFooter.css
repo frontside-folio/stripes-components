@@ -10,10 +10,10 @@
 
 .modalFooterButton {
   flex: 1 1 auto;
-  margin: calc(var(--control-margin-bottom) / 2) 4px;
+  margin: calc(var(--control-margin-bottom) / 2) 0.25rem;
 
   & + .modalFooterButton {
-    margin: calc(var(--control-margin-bottom) / 2) 4px;
+    margin: calc(var(--control-margin-bottom) / 2) 0.25rem;
   }
 
   @media (--medium-up) {

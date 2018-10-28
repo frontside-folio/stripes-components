@@ -9,10 +9,44 @@
   &:focus {
     outline: none;
   }
-}
 
-:global .stripes__icon {
-  fill: var(--color-icon);
+  & svg {
+    display: inline-block;
+    font-size: inherit;
+    fill: currentColor;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+    width: 1.125em;
+  }
+
+  &.xx-small {
+    font-size: 0.67em;
+  }
+
+  &.x-small {
+    font-size: 0.75em;
+  }
+
+  &.small {
+    font-size: 0.83em;
+  }
+
+  &.medium {
+    font-size: 1em;
+  }
+
+  &.large {
+    font-size: 1.17em;
+  }
+
+  &.x-large {
+    font-size: 1.5em;
+  }
+
+  &.xx-large {
+    font-size: 2em;
+  }
 }
 
 /**
@@ -43,45 +77,13 @@
 }
 
 /**
- * Sizing
- */
-
-.small svg {
-  height: 14px;
-  width: 14px;
-  min-width: 14px;
-}
-
-.medium svg {
-  height: 24px;
-  width: 24px;
-  min-width: 24px;
-}
-
-.large svg {
-  height: 28px;
-  width: 28px;
-  min-width: 28px;
-}
-
-/**
  * Specific styling for spinner
  * (Spinner is likely to be deprecated later on)
  */
 
-.iconSpinner.small {
-  width: 40px;
-  height: 20px;
-}
-
-.iconSpinner.medium {
-  width: 60px;
-  height: 30px;
-}
-
-.iconSpinner.large {
-  width: 100px;
-  height: 50px;
+.iconSpinner {
+  width: 1em;
+  height: 0.5em;
 }
 
 /**

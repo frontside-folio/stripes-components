@@ -68,10 +68,6 @@
     background-color: transparent;
     border: 1px solid var(--primary);
     color: var(--primary);
-
-    & :global .stripes__icon {
-      fill: var(--primary);
-    }
   }
 
   /**
