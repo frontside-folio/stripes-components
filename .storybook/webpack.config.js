@@ -8,7 +8,6 @@
 const path = require('path');
 const postCssImport = require('postcss-import');
 const autoprefixer = require('autoprefixer');
-const postCssCustomProperties = require('postcss-custom-properties');
 const postCssCalc = require('postcss-calc');
 const postCssNesting = require('postcss-nesting');
 const postCssCustomMedia = require('postcss-custom-media');
@@ -72,7 +71,6 @@ module.exports = {
               plugins: () => [
                 postCssImport(),
                 autoprefixer(),
-                postCssCustomProperties(),
                 postCssCalc(),
                 postCssNesting(),
                 postCssCustomMedia(),
